@@ -8,6 +8,20 @@ BETA OF 6/1/2017
 SARDI ICON TEST
 
 
+# i3wm installation on Linux Mint 18.1 XFCE
+
+
+You can install i3wm as well on Linux Mint 18.1 XFCE following the steps on 
+
+https://github.com/erikdubois/i3-on-Linux-Mint-18.1-Cinnamon
+
+More info can be found here : http://erikdubois.be/tag/i3/
+
+
+
+
+
+![Screenshots](http://i.imgur.com/CmZFRAT.jpg)
 
 Let us first take a screenshot of the initial look of Linux Mint 18 Xfce
 

@@ -1,4 +1,13 @@
-# Ultimate Linux Mint 18 XFCE
+# Ultimate Linux Mint 18.1 XFCE
+
+
+BETA STILL TO UPDATE AFTER THE FINAL RELEASE
+
+BETA OF 6/1/2017
+
+SARDI ICON TEST
+
+
 
 Let us first take a screenshot of the initial look of Linux Mint 18 Xfce
 

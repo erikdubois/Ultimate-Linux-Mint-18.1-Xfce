@@ -15,6 +15,10 @@ You can install i3wm as well on Linux Mint 18.1 XFCE following the steps on
 
 https://github.com/erikdubois/i3-on-Linux-Mint-18.1-Cinnamon
 
+	Change all instances from nemo in thunar.
+
+	Change gnome-terminal into xfce4-terminal.
+
 More info can be found here : http://erikdubois.be/tag/i3/
 
 

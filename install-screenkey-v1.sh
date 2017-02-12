@@ -12,21 +12,11 @@
 ##################################################################################################################
 
 
-rm /tmp/gitkraken-amd64.deb
-
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
-
-#rm /tmp/gitkraken-amd64.deb
-
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
-
+sudo rm -rf /opt/screenkey
+sudo apt-get install python-gtk2 python-setuptools python-setuptools-git python-distutils-extra -y
+sudo git clone https://github.com/wavexx/screenkey.git /opt/screenkey
+cd /opt/screenkey
+sudo ./setup.py install
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

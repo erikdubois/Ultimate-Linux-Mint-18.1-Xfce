@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -11,23 +11,21 @@
 #
 ##################################################################################################################
 
+echo "################################################################"
+echo "#########          gimp settings                ################"
+echo "################################################################"
 
-rm /tmp/gitkraken-amd64.deb
+[ -d $HOME"/.gimp-2.8" ] || mkdir -p $HOME"/.gimp-2.8"
+[ -d $HOME"/.gimp-2.8/scripts" ] || mkdir -p $HOME"/.gimp-2.8/scripts"
+[ -d $HOME"/.gimp-2.8/themes" ] || mkdir -p $HOME"/.gimp-2.8/themes"
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+echo "Copy/pasting gimp scripts and themes"
 
-#rm /tmp/gitkraken-amd64.deb
+cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
+cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
 
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########          gimp settings installed      ################"
 echo "################################################################"

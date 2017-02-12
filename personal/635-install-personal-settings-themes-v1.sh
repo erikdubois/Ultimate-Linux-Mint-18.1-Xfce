@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -12,22 +12,14 @@
 ##################################################################################################################
 
 
-rm /tmp/gitkraken-amd64.deb
+echo "################################################################"
+echo "#########          Installing themes settings   ################"
+echo "################################################################"
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
 
-#rm /tmp/gitkraken-amd64.deb
-
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
+cp settings/themes/settings.ini ~/.config/gtk-3.0/
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########        theme settings installed       ################"
 echo "################################################################"

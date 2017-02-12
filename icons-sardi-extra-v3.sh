@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -12,22 +12,23 @@
 ##################################################################################################################
 
 
-rm /tmp/gitkraken-amd64.deb
+# cleaning tmp
+[ -d /tmp/Sardi-Extra ] && rm -rf /tmp/Sardi-Extra
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+# if there is no hidden folder then make one
+[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
-#rm /tmp/gitkraken-amd64.deb
+git clone https://github.com/erikdubois/Sardi-Extra /tmp/Sardi-Extra
+find /tmp/Sardi-Extra -maxdepth 1 -type f -exec rm -rf '{}' \;
 
-echo "Download and install manually until fixed - deb is correct!!"
+cp -rf /tmp/Sardi-Extra/* ~/.icons/
 
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
+# cleaning tmp
+[ -d /tmp/Sardi-Extra ] && rm -rf /tmp/Sardi-Extra
+
+
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "###################    icons sardi extra done  #################"
 echo "################################################################"

@@ -12,22 +12,22 @@
 ##################################################################################################################
 
 
-rm /tmp/gitkraken-amd64.deb
+rm /tmp/virtual-box.deb
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+#wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
+wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
+#curl -o /tmp/code_1.5.3-1474533365_amd64.deb https://code.visualstudio.com/docs/?dv=linux64_deb
+sudo dpkg -i /tmp/virtual-box.deb
+#gdebi /tmp/code_1.5.3-1474533365_amd64.deb
 
-#rm /tmp/gitkraken-amd64.deb
 
-echo "Download and install manually until fixed - deb is correct!!"
+rm /tmp/virtual-box.deb
 
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
+##################################################################################################################
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"
+
+

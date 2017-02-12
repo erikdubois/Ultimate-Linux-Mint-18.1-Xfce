@@ -5,29 +5,20 @@
 # Author 	: 	Erik Dubois
 # Website 	: 	http://www.erikdubois.be
 ##################################################################################################################
+
 ##################################################################################################################
 #
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
 #
 ##################################################################################################################
 
+sudo apt-get install dconf-cli -y
 
-rm /tmp/gitkraken-amd64.deb
-
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
-
-#rm /tmp/gitkraken-amd64.deb
-
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
-
+dconf load /org/cinnamon/desktop/keybindings/ < keyboard-shortcuts-cinnamon.dconf
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "###################    shortcuts loaded   ######################"
 echo "################################################################"
+
+sleep 1
+

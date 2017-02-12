@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -11,23 +11,12 @@
 #
 ##################################################################################################################
 
+echo "loading all shortcuts"
 
-rm /tmp/gitkraken-amd64.deb
-
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
-
-#rm /tmp/gitkraken-amd64.deb
-
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
-
+cd settings/keyboard-shortcuts
+sh dconf_load.sh
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########       keyboard shortcuts set          ################"
 echo "################################################################"
+

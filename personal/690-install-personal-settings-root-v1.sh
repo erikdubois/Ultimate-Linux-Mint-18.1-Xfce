@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -11,23 +11,23 @@
 #
 ##################################################################################################################
 
+echo "################################################################"
+echo "#########          root files                   ################"
+echo "################################################################"
 
-rm /tmp/gitkraken-amd64.deb
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
 
-#rm /tmp/gitkraken-amd64.deb
+#cp settings/.bashrc ~/
+#cp settings/.gtkrc-2.0 ~/
+#cp settings/.xinitrc ~/
+#cp settings/.zlogin ~/
+#cp settings/.zshrc ~/
+#cp settings/bookmarks ~/.config/gtk-3.0/
+#cp settings/settings.ini ~/.config/gtk-3.0/
+#cp settings/sublimetext/* ~/.config/sublime-text-3/Packages/User/
 
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########          root files installed         ################"
 echo "################################################################"

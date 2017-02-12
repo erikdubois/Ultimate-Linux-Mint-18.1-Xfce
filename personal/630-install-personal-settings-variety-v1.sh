@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -11,23 +11,15 @@
 #
 ##################################################################################################################
 
+[ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
+[ -d $HOME"/.config/variety/scripts" ] || mkdir -p $HOME"/.config/variety/scripts"
 
-rm /tmp/gitkraken-amd64.deb
+echo "Copy/pasting scripts for feh/variety to work"
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+cp settings/variety/* ~/.config/variety/
 
-#rm /tmp/gitkraken-amd64.deb
-
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########       variety installed               ################"
 echo "################################################################"

@@ -12,22 +12,23 @@
 ##################################################################################################################
 
 
-rm /tmp/gitkraken-amd64.deb
+# cleaning tmp
+[ -d /tmp/sardi ] && rm -rf /tmp/sardi
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+# if there is no hidden folder then make one
+[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
-#rm /tmp/gitkraken-amd64.deb
+wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
+mkdir /tmp/sardi
+tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
+rm /tmp/sardi.tar.gz
+cp -rf /tmp/sardi/* ~/.icons/
 
-echo "Download and install manually until fixed - deb is correct!!"
+# cleaning tmp
+[ -d /tmp/sardi ] && rm -rf /tmp/sardi
 
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "###################    icons sardi done   ######################"
 echo "################################################################"

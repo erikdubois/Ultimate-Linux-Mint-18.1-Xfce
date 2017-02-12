@@ -11,23 +11,21 @@
 #
 ##################################################################################################################
 
+# cleaning tmp
+[ -d /tmp/Surfn ] && rm -rf /tmp/Surfn
 
-rm /tmp/gitkraken-amd64.deb
+# if there is no hidden folder then make one
+[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
-wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
-sudo dpkg -i /tmp/gitkraken-amd64.deb
+git clone https://github.com/erikdubois/Surfn /tmp/Surfn
+find /tmp/Surfn -maxdepth 1 -type f -exec rm -rf '{}' \;
+cp -rf /tmp/Surfn/* ~/.icons/
 
-#rm /tmp/gitkraken-amd64.deb
+# cleaning tmp
+[ -d /tmp/Surfn ] && rm -rf /tmp/Surfn
 
-echo "Download and install manually until fixed - deb is correct!!"
-
-echo "fixing hardcoded icon"
-old="Icon=app"
-new="Icon=gitkraken"
-location="/usr/share/applications/gitkraken.desktop"
-sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "###################    icons surfn done   ######################"
 echo "################################################################"

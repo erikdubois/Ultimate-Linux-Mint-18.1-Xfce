@@ -11,10 +11,9 @@ set -e
 #
 ##################################################################################################################
 
-echo "loading all shortcuts"
+echo "copy/pasting the shortcuts"
 
-cd settings/keyboard-shortcuts
-sh dconf_load.sh
+cp settings/keyboard-shortcuts/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 
 echo "################################################################"
 echo "#########       keyboard shortcuts set          ################"

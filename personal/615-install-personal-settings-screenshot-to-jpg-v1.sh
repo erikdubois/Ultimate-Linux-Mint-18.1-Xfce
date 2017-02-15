@@ -15,6 +15,10 @@ echo "################################################################"
 echo "#########       Screenshot settings             ################"
 echo "################################################################"
 
+echo "Installing gnome-screenshot first"
+
+sudo apt install -y gnome-screenshot
+
 echo "Making sure gnome-screenshot saves in jpg - smaller in kb"
 
 sh settings/gnome-screenshot/set-gnome-screenshot-to-save-as-jpg.sh

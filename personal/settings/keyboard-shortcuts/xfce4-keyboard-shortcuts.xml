@@ -41,6 +41,34 @@
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Alt&gt;t" type="string" value="variety -t"/>
+      <property name="&lt;Alt&gt;n" type="string" value="varieyt -n"/>
+      <property name="&lt;Alt&gt;p" type="string" value="variety -p"/>
+      <property name="&lt;Alt&gt;f" type="string" value="variety -f"/>
+      <property name="&lt;Alt&gt;Up" type="string" value="variety --pause"/>
+      <property name="&lt;Alt&gt;Down" type="string" value="variety --resume"/>
+      <property name="&lt;Super&gt;Right" type="string" value="variety -n"/>
+      <property name="&lt;Alt&gt;Left" type="string" value="variety -p"/>
+      <property name="&lt;Super&gt;F1" type="string" value="firefox"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="thunar"/>
+      <property name="&lt;Super&gt;F5" type="string" value="meld"/>
+      <property name="&lt;Super&gt;F4" type="string" value="gimp"/>
+      <property name="&lt;Super&gt;F3" type="string" value="inkscape"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;i" type="string" value="inkscapte"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="gimp"/>
+      <property name="&lt;Super&gt;F2" type="string" value="subl"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="firefox"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
+      <property name="&lt;Super&gt;F10" type="string" value="spotify"/>
+      <property name="&lt;Super&gt;F9" type="string" value="evolution"/>
+      <property name="&lt;Primary&gt;Print" type="string" value="gnome-screenshot -i"/>
+      <property name="&lt;Super&gt;F6" type="string" value="vlc"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="subl"/>
+      <property name="&lt;Super&gt;F8" type="string" value="thunar"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="catfish"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="evolution"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="spotify"/>
+      <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="thunar"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

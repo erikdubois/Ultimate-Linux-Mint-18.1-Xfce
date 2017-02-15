@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -19,7 +19,7 @@ sh conky-aureola-v3.sh
 
 # Sardi-extra icons
 
-sh icons-sardi-extra-v3.sh
+sh icons-sardi-extra-v4.sh
 
 ###############################################################################################
 
@@ -31,7 +31,7 @@ sh icons-sardi-v3.sh
 
 # Surfn icons
 
-sh icons-surfn-v3.sh
+sh icons-surfn-v4.sh
 
 ###############################################################################################
 

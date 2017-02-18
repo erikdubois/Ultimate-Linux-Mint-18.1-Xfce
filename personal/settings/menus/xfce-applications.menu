@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Xfce</Name>
+	<DefaultAppDirs />
+	<DefaultDirectoryDirs />
+	<DefaultMergeDirs />
+	<Include>
+		<Category>X-Xfce-Toplevel</Category>
+	</Include>
+	<MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+		<Name>Settings</Name>
+		<Directory>xfce-settings.directory</Directory>
+		<Menu>
+			<Name>Screensavers</Name>
+			<Directory>xfce-screensavers.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>xfce-settings-manager.desktop</Filename>
+			<Separator />
+			<Filename>mugshot.desktop</Filename>
+			<Filename>xfce4-accessibility-settings.desktop</Filename>
+			<Filename>xfce-ui-settings.desktop</Filename>
+			<Filename>apturl_mime.desktop</Filename>
+			<Filename>apturl.desktop</Filename>
+			<Filename>mintbackup.desktop</Filename>
+			<Filename>blueberry.desktop</Filename>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+			<Filename>ccsm.desktop</Filename>
+			<Filename>cool-retro-term.desktop</Filename>
+			<Filename>ca.desrt.dconf-editor.desktop</Filename>
+			<Filename>xfce-backdrop-settings.desktop</Filename>
+			<Filename>mintdesktop.desktop</Filename>
+			<Filename>vino-preferences.desktop</Filename>
+			<Filename>org.gnome.DiskUtility.desktop</Filename>
+			<Filename>org.gnome.baobab.desktop</Filename>
+			<Filename>xfce-display-settings.desktop</Filename>
+			<Filename>mintNanny.desktop</Filename>
+			<Filename>mintdrivers.desktop</Filename>
+			<Filename>thunar-settings.desktop</Filename>
+			<Filename>gufw.desktop</Filename>
+			<Filename>gdebi.desktop</Filename>
+			<Filename>gparted.desktop</Filename>
+			<Filename>grsync.desktop</Filename>
+			<Filename>itweb-settings.desktop</Filename>
+			<Filename>mintlocale-im.desktop</Filename>
+			<Filename>xfce-keyboard-settings.desktop</Filename>
+			<Filename>mintlocale.desktop</Filename>
+			<Filename>mdmsetup.desktop</Filename>
+			<Filename>xfce4-session-logout.desktop</Filename>
+			<Filename>menulibre.desktop</Filename>
+			<Filename>xfce4-mime-settings.desktop</Filename>
+			<Filename>xfce-mouse-settings.desktop</Filename>
+			<Filename>network.desktop</Filename>
+			<Filename>nm-connection-editor.desktop</Filename>
+			<Filename>mdmflexiserver.desktop</Filename>
+			<Filename>xfce4-notifyd-config.desktop</Filename>
+			<Filename>Thunar-folder-handler.desktop</Filename>
+			<Filename>openjdk-8-policytool.desktop</Filename>
+			<Filename>panel-preferences.desktop</Filename>
+			<Filename>xfce4-power-manager-settings.desktop</Filename>
+			<Filename>exo-preferred-applications.desktop</Filename>
+			<Filename>system-config-printer.desktop</Filename>
+			<Filename>hplj1020.desktop</Filename>
+			<Filename>thunar-volman-settings.desktop</Filename>
+			<Filename>gksu.desktop</Filename>
+			<Filename>xscreensaver-properties.desktop</Filename>
+			<Menuname>Screensavers</Menuname>
+			<Filename>xfce-session-settings.desktop</Filename>
+			<Filename>xfce4-settings-editor.desktop</Filename>
+			<Filename>shares.desktop</Filename>
+			<Filename>mintinstall.desktop</Filename>
+			<Filename>mintsources.desktop</Filename>
+			<Filename>synaptic.desktop</Filename>
+			<Filename>hardinfo.desktop</Filename>
+			<Filename>xfce4-taskmanager.desktop</Filename>
+			<Filename>Thunar.desktop</Filename>
+			<Filename>time.desktop</Filename>
+			<Filename>mintupdate.desktop</Filename>
+			<Filename>mintupload.desktop</Filename>
+			<Filename>users.desktop</Filename>
+			<Filename>mintwelcome.desktop</Filename>
+			<Filename>xfce-wm-settings.desktop</Filename>
+			<Filename>xfce-wmtweaks-settings.desktop</Filename>
+			<Filename>xfce-workspaces-settings.desktop</Filename>
+			<Filename>xfce4-terminal.desktop</Filename>
+			<Filename>virtualbox.desktop</Filename>
+			<Filename>paprefs.desktop</Filename>
+			<Filename>qtconfig-qt4.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Accessories</Name>
+		<Directory>xfce-accessories.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>xfce4-appfinder.desktop</Filename>
+			<Filename>file-roller.desktop</Filename>
+			<Filename>org.gnome.FileRoller.desktop</Filename>
+			<Filename>atom.desktop</Filename>
+			<Filename>bluetooth-sendto.desktop</Filename>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+			<Filename>gnome-calculator.desktop</Filename>
+			<Filename>catfish.desktop</Filename>
+			<Filename>gucharmap.desktop</Filename>
+			<Filename>org.gnome.DiskUtility.desktop</Filename>
+			<Filename>xreader.desktop</Filename>
+			<Filename>exo-file-manager.desktop</Filename>
+			<Filename>nemo.desktop</Filename>
+			<Filename>org.gnome.font-viewer.desktop</Filename>
+			<Filename>yelp.desktop</Filename>
+			<Filename>mint-user-guide.desktop</Filename>
+			<Filename>xviewer.desktop</Filename>
+			<Filename>menulibre.desktop</Filename>
+			<Filename>Thunar-folder-handler.desktop</Filename>
+			<Filename>orca.desktop</Filename>
+			<Filename>seahorse.desktop</Filename>
+			<Filename>com.uploadedlobster.peek.desktop</Filename>
+			<Filename>plank.desktop</Filename>
+			<Filename>redshift-gtk.desktop</Filename>
+			<Filename>xfce4-run.desktop</Filename>
+			<Filename>screenruler.desktop</Filename>
+			<Filename>xfce4-screenshooter.desktop</Filename>
+			<Filename>org.gnome.Screenshot.desktop</Filename>
+			<Filename>shutter.desktop</Filename>
+			<Filename>synapse.desktop</Filename>
+			<Filename>xfce4-taskmanager.desktop</Filename>
+			<Filename>exo-terminal-emulator.desktop</Filename>
+			<Filename>xed.desktop</Filename>
+			<Filename>Thunar.desktop</Filename>
+			<Filename>tomboy.desktop</Filename>
+			<Filename>mintstick.desktop</Filename>
+			<Filename>mintstick-format.desktop</Filename>
+			<Filename>variety.desktop</Filename>
+			<Filename>xfburn.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Development</Name>
+		<Directory>xfce-development.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>atom.desktop</Filename>
+			<Filename>brackets.desktop</Filename>
+			<Filename>meld.desktop</Filename>
+			<Filename>python2.7.desktop</Filename>
+			<Filename>python3.5.desktop</Filename>
+			<Filename>sublime_text.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Education</Name>
+		<Directory>xfce-education.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Games</Name>
+		<Directory>xfce-games.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Graphics</Name>
+		<Directory>xfce-graphics.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>gimp.desktop</Filename>
+			<Filename>gpick.desktop</Filename>
+			<Filename>display-im6.q16.desktop</Filename>
+			<Filename>display-im6.desktop</Filename>
+			<Filename>inkscape.desktop</Filename>
+			<Filename>pinta.desktop</Filename>
+			<Filename>pix.desktop</Filename>
+			<Filename>pix-import.desktop</Filename>
+			<Filename>simple-scan.desktop</Filename>
+			<Filename>variety-slideshow.desktop</Filename>
+			<Filename>feh.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Network</Name>
+		<Directory>xfce-network.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>dropbox.desktop</Filename>
+			<Filename>firefox.desktop</Filename>
+			<Filename>geary-autostart.desktop</Filename>
+			<Filename>geary.desktop</Filename>
+			<Filename>google-chrome.desktop</Filename>
+			<Filename>hexchat.desktop</Filename>
+			<Filename>icedtea-netx-javaws.desktop</Filename>
+			<Filename>insync.desktop</Filename>
+			<Filename>exo-mail-reader.desktop</Filename>
+			<Filename>pidgin.desktop</Filename>
+			<Filename>com.teamviewer.TeamViewer.desktop</Filename>
+			<Filename>thunderbird.desktop</Filename>
+			<Filename>transmission-gtk.desktop</Filename>
+			<Filename>vivaldi-stable.desktop</Filename>
+			<Filename>exo-web-browser.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Multimedia</Name>
+		<Directory>xfce-multimedia.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>clementine.desktop</Filename>
+			<Filename>de.haeckerfelix.gradio.desktop</Filename>
+			<Filename>mint-meta-codecs.desktop</Filename>
+			<Filename>xplayer.desktop</Filename>
+			<Filename>openshot.desktop</Filename>
+			<Filename>pavucontrol.desktop</Filename>
+			<Filename>radiotray.desktop</Filename>
+			<Filename>rhythmbox.desktop</Filename>
+			<Filename>rhythmbox-device.desktop</Filename>
+			<Filename>simplescreenrecorder.desktop</Filename>
+			<Filename>spotify.desktop</Filename>
+			<Filename>vlc.desktop</Filename>
+			<Filename>xfburn.desktop</Filename>
+			<Filename>paman.desktop</Filename>
+			<Filename>pasystray.desktop</Filename>
+			<Filename>pavumeter-record.desktop</Filename>
+			<Filename>pavumeter.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Office</Name>
+		<Directory>xfce-office.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>xfce4-dict.desktop</Filename>
+			<Filename>evolution.desktop</Filename>
+			<Filename>focuswriter.desktop</Filename>
+			<Filename>libreoffice-startcenter.desktop</Filename>
+			<Filename>libreoffice-base.desktop</Filename>
+			<Filename>libreoffice-calc.desktop</Filename>
+			<Filename>libreoffice-draw.desktop</Filename>
+			<Filename>libreoffice-impress.desktop</Filename>
+			<Filename>libreoffice-math.desktop</Filename>
+			<Filename>libreoffice-writer.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Other</Name>
+		<Directory>xfce-other.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>gcr-prompter.desktop</Filename>
+			<Filename>signon-ui.desktop</Filename>
+			<Filename>nemo-autorun-software.desktop</Filename>
+			<Filename>compiz.desktop</Filename>
+			<Filename>panel-desktop-handler.desktop</Filename>
+			<Filename>gnome-disk-image-mounter.desktop</Filename>
+			<Filename>gnome-disk-image-writer.desktop</Filename>
+			<Filename>chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop</Filename>
+			<Filename>chrome-aohghmighlieiainnegkcijnfilokake-Default.desktop</Filename>
+			<Filename>chrome-apdfllckaahabafndbhieahigkjlhalf-Default.desktop</Filename>
+			<Filename>insync-helper.desktop</Filename>
+			<Filename>libreoffice-xsltfilter.desktop</Filename>
+			<Filename>metacity.desktop</Filename>
+			<Filename>mint-window-manager.desktop</Filename>
+			<Filename>mono-runtime-common.desktop</Filename>
+			<Filename>mono-runtime-terminal.desktop</Filename>
+			<Filename>nm-applet.desktop</Filename>
+			<Filename>openjdk-8-java.desktop</Filename>
+			<Filename>redshift.desktop</Filename>
+			<Filename>gcr-viewer.desktop</Filename>
+			<Filename>geoclue-where-am-i.desktop</Filename>
+			<Filename>chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.desktop</Filename>
+			<Filename>i3.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>menulibre-personal-files</Name>
+		<Directory>menulibre-personal-files.directory</Directory>
+		<DirectoryDir>/home/erik/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>menulibre-open-conky.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>System</Name>
+		<Directory>xfce-system.directory</Directory>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>apturl_mime.desktop</Filename>
+			<Filename>apturl.desktop</Filename>
+			<Filename>mintbackup.desktop</Filename>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+			<Filename>cool-retro-term.desktop</Filename>
+			<Filename>ca.desrt.dconf-editor.desktop</Filename>
+			<Filename>org.gnome.baobab.desktop</Filename>
+			<Filename>mintNanny.desktop</Filename>
+			<Filename>mintdrivers.desktop</Filename>
+			<Filename>gdebi.desktop</Filename>
+			<Filename>gparted.desktop</Filename>
+			<Filename>grsync.desktop</Filename>
+			<Filename>mdmsetup.desktop</Filename>
+			<Filename>xfce4-session-logout.desktop</Filename>
+			<Filename>network.desktop</Filename>
+			<Filename>mdmflexiserver.desktop</Filename>
+			<Filename>Thunar-folder-handler.desktop</Filename>
+			<Filename>system-config-printer.desktop</Filename>
+			<Filename>hplj1020.desktop</Filename>
+			<Filename>gksu.desktop</Filename>
+			<Filename>shares.desktop</Filename>
+			<Filename>mintinstall.desktop</Filename>
+			<Filename>mintsources.desktop</Filename>
+			<Filename>synaptic.desktop</Filename>
+			<Filename>hardinfo.desktop</Filename>
+			<Filename>xfce4-taskmanager.desktop</Filename>
+			<Filename>Thunar.desktop</Filename>
+			<Filename>time.desktop</Filename>
+			<Filename>mintupdate.desktop</Filename>
+			<Filename>mintupload.desktop</Filename>
+			<Filename>users.desktop</Filename>
+			<Filename>xfce4-terminal.desktop</Filename>
+			<Filename>virtualbox.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Layout>
+		<Filename>xfce4-run.desktop</Filename>
+		<Separator />
+		<Filename>exo-terminal-emulator.desktop</Filename>
+		<Filename>exo-file-manager.desktop</Filename>
+		<Filename>exo-mail-reader.desktop</Filename>
+		<Filename>exo-web-browser.desktop</Filename>
+		<Separator />
+		<Menuname>Settings</Menuname>
+		<Separator />
+		<Menuname>Accessories</Menuname>
+		<Menuname>Development</Menuname>
+		<Menuname>Education</Menuname>
+		<Menuname>Games</Menuname>
+		<Menuname>Graphics</Menuname>
+		<Menuname>Network</Menuname>
+		<Filename>mint-xfce4-lock.desktop</Filename>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>Office</Menuname>
+		<Menuname>Other</Menuname>
+		<Menuname>menulibre-personal-files</Menuname>
+		<Menuname>System</Menuname>
+		<Separator />
+		<Filename>xfce4-session-logout.desktop</Filename>
+		<Filename>menulibre-open-conky.desktop</Filename>
+	</Layout>
+</Menu>

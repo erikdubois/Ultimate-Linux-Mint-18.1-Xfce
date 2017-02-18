@@ -11,11 +11,11 @@ set -e
 #
 ##################################################################################################################
 
-echo "copy/pasting the config of the terminal"
+echo "copy/pasting compton configuration"
 
-cp settings/terminal/terminalrc ~/.config/xfce4/terminal/terminalrc
+cp settings/compton/compton.conf ~/.config/compton.conf
 
 echo "################################################################"
-echo "#########       terminal settings copied        ################"
+echo "#########       compton.conf copied             ################"
 echo "################################################################"
 

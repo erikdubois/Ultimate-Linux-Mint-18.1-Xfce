@@ -47,6 +47,9 @@ s0_command_screenshot = mate-screenshot
 s0_command_window_screenshot = mate-screenshot --window
 s0_command_terminal = mate-terminal
 
+[opacify]
+s0_passive_opacity = 30
+
 [cubeaddon]
 s0_ground_color1 = #b3b3b3cc
 s0_ground_color2 = #b3b3b300
@@ -78,6 +81,10 @@ s0_bevel = 7
 s0_bevel_bottomleft = true
 s0_bevel_bottomright = true
 
+[bench]
+s0_initiate_key = F12
+s0_fps_limiter_mode = 1
+
 [staticswitcher]
 s0_next_key = Disabled
 s0_next_all_key = <Alt>Tab
@@ -100,14 +107,14 @@ s0_top_right_corner_action = 9
 s0_bottom_left_corner_action = 1
 s0_bottom_edge_action = 2
 s0_bottom_right_corner_action = 3
-s0_outline_color = #84fb009f
-s0_fill_color = #74fb004f
+s0_outline_color = #e60a079f
+s0_fill_color = #fb0e004f
 
 [crashhandler]
 s0_wm_cmd = marco --replace
 
 [core]
-s0_active_plugins = core;composite;opengl;decor;copytex;commands;place;resize;imgjpeg;obs;compiztoolbox;gnomecompat;addhelper;imgpng;staticswitcher;showdesktop;move;grid;regex;wobbly;cube;rotate;cubeaddon;td;animation;freewins;expo;
+s0_active_plugins = core;composite;opengl;decor;copytex;commands;place;resize;imgjpeg;obs;compiztoolbox;gnomecompat;addhelper;imgpng;staticswitcher;showdesktop;move;grid;trailfocus;regex;wobbly;mousepoll;notification;cube;rotate;cubeaddon;td;animation;scale;thumbnail;freewins;expo;
 s0_focus_prevention_match = !(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py)
 s0_hsize = 4
 
@@ -118,6 +125,9 @@ s0_zoom_box_fill_color = #2f2f2f4f
 [screenshot]
 s0_selection_outline_color = #2f2f4f9f
 s0_selection_fill_color = #2f2f4f4f
+
+[scale]
+s0_initiate_all_key = F1
 
 [wall]
 s0_thumb_highlight_gradient_shadow_color = #dfdfdfff

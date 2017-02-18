@@ -20,7 +20,7 @@ cp settings/dropbox/* ~/.config/autostart/
 
 dropbox autostart n
 
-[ -f $HOME"/.config/autostart/dropbox.desktop" ] && rm  $HOME"/.config/autostart/dropbox.desktop"
+#[ -f $HOME"/.config/autostart/dropbox.desktop" ] && rm  $HOME"/.config/autostart/dropbox.desktop"
 
 echo "################################################################"
 echo "#########       dropbox fix  installed          ################"

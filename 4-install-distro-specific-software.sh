@@ -11,8 +11,9 @@
 #
 ##################################################################################################################
 
-
-
+# want to have nemo and gnome-terminal for icon in toolbar
+sudo apt-get install -y gnome-terminal
+sudo apt-get install -y nemo nemo-fileroller nemo-dropbox nemo-compare
 
 
 
